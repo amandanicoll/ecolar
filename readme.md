@@ -1,4 +1,4 @@
-# Projeto: [NOME DO Projeto]
+# Projeto: ECOLAR
 
 ## Descrição
 
@@ -30,12 +30,9 @@ Clique com o botão direito em cima da pasta backend e escolha a opção "Open i
 #### 3. Digite "npm install" para instalar as dependências
 #### 4.  Inicie o Servidor Backend
 Digite o comando "npm start" para iniciar o servidor. Certifique-se de que não tem nada rodando na porta que foi designada no arquivo "server.js".
-<!- QUEM UTILIZA O MYSQL DEIXA O PRÓXIMO PASSO, QUEM NÃO, PODE RETIRAR. AJUSTAR A NUMERAÇÃO TAMBÉM->
-#### 5. Banco de Dados: No arquivo [COLOQUE O NOME DO ARQUIVO DA PASTA db.js] troque as credenciais pelas suas, o nome do banco de dados, o host e a senha.
+#### 5. Banco de Dados: No arquivo mysql.js troque as credenciais pelas suas, o nome do banco de dados, o host e a senha.
 #### 6. Script do banco de dados: O script está no arquivo [coloque o nome do arquivo aqui].
 #### 5. Instale a extensão do "live server" no VSCODE
 #### 6. Abra a pasta do frontend
 Clique com o botão direito no arquivo index.html e selecione "Open with Live Server".
 #### 7. O frontend será carregado automaticamente no navegador.
-
-Divirta-se explorando e utilizando o projeto! 🎉
