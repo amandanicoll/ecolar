@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLar</title>
+  <link rel="stylesheet" href="../css/pag_inicial.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+</head>
+<body>
+  <!-- Container principal que contém toda a estrutura da página -->
+  <div class="container">
+    <!-- Barra lateral com ícones de navegação -->
+    <!-- Menu Lateral Fixo -->
+    <aside class="sidebar">
+      <div class="logo">🌍 Olá, <span id="username">Usuário!</span></div>
+      <nav>
+        <ul>
+          <li><a href="./pag_inicial.html" class="active">Home</a></li>
+          <li><a href="./perfil.html">Perfil</a></li>
+          <li><a href="./comunidades.html">Comunidade</a></li>
+          <li><a href="./pontos.html">Pontos de Coleta</a></li>
+          <li><a href="#" id="logout">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <!-- Área principal de conteúdo -->
+    <main class="content">
+      <!-- Cabeçalho contendo a barra de pesquisa e o logotipo -->
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar Descarte">
+          <button type="button">🔍</button> <!-- Campo de pesquisa -->
+        </div>
+        <div class="logo" > 
+          <img src="../img/logo.jpeg" alt="logo">  <!-- Logotipo do site -->
+        </div> 
+      </header>
+      <!-- Seção principal do conteúdo -->
+      <section class="main-content">
+        <!-- Seção de imagem com a descrição -->
+        <div class="image-section">
+          <img src="../img/lixeiras.png" alt="Lixeiras coloridas">
+          <p class="description">Cada cor representa um tipo de lixo. Descarte consciente.</p>
+          <section class="cards-group">
+            <!--Carregado do banco de dados pelo javascript-->
+          </section>
+        </div>
+
+        <!-- Seção de ícones representando tipos de resíduos -->
+        <div class="icons-section">
+          <h3>Ideias de Reciclagem</h3>
+          <div class="icon tire-icon">
+              <a href="./ideiapneu.html"><img src="../img/1.png" alt="pneus" /></a>
+          </div> <!-- Ícone de Pneus -->
+          <div class="icon plastic-icon">
+            <a href="./ideiaplastico.html"><img src="../img/2.png" alt="plásticos" /></a>
+          </div> <!-- Ícone de Plástico -->
+          <div class="icon glass-icon">
+            <a href="./ideiavidros.html"><img src="../img/3.png" alt="vidro" /></a>
+          </div> <!-- Ícone de Vidro -->
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../javascript/menu.js"></script>
+  <script src="../javascript/username.js"></script>
+  <script src="../javascript/inicial.js"></script>
+  <script src="../javascript/usuarioEsair.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ORGANIZA OS ELEMENTOS PRINCIPAIS */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #a7c051;
+}
+
+
+
+/* Área principal de conteúdo */
+main {
+  margin-left: 3%; /* Deixa o conteúdo principal à direita do menu fixo */
+  width: calc(100% - 190px); /* Garante que o main ocupe o restante da largura */
+  padding: 20px;
+  background-color: #a7c051;
+  display: flex;
+  flex-direction: column;
+}
+
+header.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.logo img{
+  width: 100px;
+  margin-left: 110px;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+}
+.search-bar input{
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+section.main-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+.image-section{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-section img{
+  width: 70%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.image-section .description {
+  width: 70%;
+  background-color: #283718;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  font-size: 18px;
+  z-index: 1000;
+  bottom: -15px;
+} 
+
+.icons-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0.5;
+}
+
+.icons-section h3{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #283718;
+  border-bottom: 1px solid #cbf1a0;
+}
+.icons-section div.icon {
+  width: 100px;
+  background-color: #acb530;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icons-section div.icon:hover{
+  background-color: #e3e2e2;
+}
+
+.icons-section div.icon img {
+  width: 100%; /* Faz a largura da imagem ocupar todo o espaço disponível no contêiner */
+  height: 100%; /* Faz a altura da imagem ocupar todo o espaço disponível no contêiner */
+  object-fit: cover; /* Ajusta a imagem para preencher o contêiner, cortando se necessário */
+  border-radius: 10px; /* Mantém o mesmo arredondamento do contêiner */
+}
+
+/* Estilo geral do card */
+
+.cards-group{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  width: 200px;
+  height: 150px;
+  perspective: 1000px; /* Adiciona a perspectiva para o efeito 3D */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* Rotaciona o card ao passar o mouse */
+}
+
+/* Lado da frente do card */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Estilo da frente */
+.card-front {
+  background-color: #cbf1a0;
+  color: black;
+}
+
+/* Estilo do verso */
+.card-back {
+  background-color: lightgreen;
+  color: black;
+  transform: rotateY(180deg);
+  padding-left: 10px;
+}

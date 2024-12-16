@@ -1,0 +1,40 @@
+/*BARRA DE OPÇÕES*/
+.sidebar {
+    width: 300px;
+    background-color: #2d4b21;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  /*CONFIGURAÇÕES DOS ELEMENTOS DE DENTRO DA BARRA DE OPÇÕES*/
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav ul li a {     /*COLOCAR ESCRITAS NO MEIO*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .sidebar nav ul li a.active,
+  .sidebar nav ul li a:hover {
+    background-color: #a7c051;
+    width: 200%;
+  }

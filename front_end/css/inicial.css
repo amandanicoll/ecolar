@@ -1,0 +1,116 @@
+/*IMPORTANDO FONTES DO GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*FUNDO*/
+body{
+    background: url("../img/fundo.png") no-repeat left top;
+    background-size: cover;
+}
+
+/*TÍTULO*/
+h1{
+    margin-top:30px;
+    font-family: "Salsa", cursive;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+/*FORMATAÇÃO DA FRASE DA PÁGINA INICIAL E CAIXA DE LOGIN*/
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*FORMATAÇÃO DA CAIXA DE LOGIN*/
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    max-height: 600px;
+    background: url("../img/caixa.png"); /*COLOCAR IMG DE FUNDO DEPOIS*/
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*FORMATAÇÃO DO TÍTULO DA CAIXA DE LOGIN*/
+.right h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/*FORMATAÇÃO DAS CAIXAS DE TEXTO*/
+.right input{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+/*FORMATAÇÃO DO TEXTO DE DENTRO DAS CAIXAS DE TEXTO*/
+input::placeholder{
+    color: #919191;
+    text-align: center;
+}
+
+/*FORMATAÇÃO DO BOTÃO DE LOGIN*/
+.botaoLogin, .botaoLimpar{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #ACB530;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/*FORMATAÇÃO DO LINK PARA CADASTRAR NOVO USUÁRIO*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:#919191;
+}
+
+/*FORMATAÇÃO DA FRASE INICIAL*/
+section.left p{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+/*FORMATAÇÃO DA SELEÇÃO DE TIPO DE USUÁRIO*/
+p.white{
+    color:white;
+}
+.radio{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**FORMATAÇÃO DOS BOTÕES**/
+.botoes{
+    display: flex;
+    gap: 20px;
+}

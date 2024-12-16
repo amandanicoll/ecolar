@@ -1,0 +1,81 @@
+/* O estilo do corpo da página */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+/* Estilo do menu lateral */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Estilo dos links no menu com ícones */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Estilo dos ícones dentro do menu */
+.menu-icon {
+    width: 30px;  /* Ajuste o tamanho do ícone */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Alinhar imagem e texto */
+.sidenav a {
+    display: flex;
+    align-items: center;
+    color: #818181;
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #283718;
+}
+
+/* Estilo do botão de fechar */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* O botão para abrir o menu */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+main {
+    margin-left: 80px; /* Dá espaço para o menu lateral */
+    padding: 20px;
+    flex: 1;
+}
+
+/* Estilo do conteúdo principal */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}

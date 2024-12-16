@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOLAR</title>
+    <link rel="stylesheet" href="../css/inicial.css">
+</head>
+<body>
+    <!--TÍTULO-->
+    <header>
+        <h1>EcoLar</h1>
+    </header>
+    <main>
+        <!--FRASE DA PÁGINA INICIAL-->
+        <section class="left"> 
+            <p>"Um planeta mais limpo começa em sua casa."</p>
+        </section>
+        <!--CAIXA DE CADASTRO-->
+        <section class="right">
+            <h3>Cadastro</h3>
+            <!--ENTRADA DO NOME DE USUÁRIO-->
+            <input type="text" id="nome" placeholder="Nome"/>
+            <!--ENTRADA DO NOME DE EMAIL DO USUÁRIO-->
+            <input type="email" id="email" placeholder="Email"/>
+            <!--ENTRADA DA SENHA-->
+            <input type="password" id="senha" placeholder="Senha"/>
+            <!--SELECIONAR TIPO DE USUÁRIO-->
+            <p class="white">Cadastre-se como:</p>
+            <div class="radio">
+                <!--VOLUNTARIO-->
+                <div>
+                    <label for="usuario">Usuário</label>
+                    <input type="radio" id="usuario" name="usuarios" value="usuario">
+                </div>
+                <!--PONTO DE COLETA-->
+                <div>
+                    <label for="ponto">Ponto de Coleta</label>
+                    <input type="radio" id="ponto" name="usuarios" value="ponto">
+                </div>
+            </div>
+
+            <!--BOTÕES-->
+            <div class="botoes">
+                <!--BOTÃO LOGIN-->
+                <button class="botaoLogin">Cadastrar</button>
+                <!--BOTÃO LIMPAR-->
+                <button class="botaoLimpar">Limpar</button>
+            </div>
+        </section>
+    </main>
+    <script src="../javascript/cadastro.js"></script>
+</body>
+</html>
